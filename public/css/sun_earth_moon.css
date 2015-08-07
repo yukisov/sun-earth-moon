@@ -8,3 +8,45 @@ body {
   padding-top:15px;
   padding-bottom:15px;
 }
+
+.starContainer {
+  position: relative;
+  width: 340px;
+  height: 340px;
+  margin: 15px;
+}
+
+.sun {
+  position: absolute;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #ff7b00;
+  width: 35px;
+  height: 35px;
+}
+
+.earth {
+  position: absolute;
+  /*-webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #008cff;*/
+  /*background-color: #6cb7f4;*/
+  /*width: 26px;
+  height: 26px;*/
+}
+
+.moon {
+  position: absolute;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #ffd900;
+  width: 15px;
+  height: 15px;
+}
+
+#multi-speed {
+  width: 7em;
+}

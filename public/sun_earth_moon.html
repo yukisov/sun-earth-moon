@@ -29,8 +29,24 @@
       </h1>
     </div>
 
-
-
+    時間速度：
+    <select id="multi-speed">
+      <option value="1">1秒</option>
+      <option value="60">1分</option>
+      <option value="3600">1時間</option>
+      <option value="21600">6時間</option>
+      <option value="43200">12時間</option>
+      <option value="86400">1日</option>
+      <option value="604800">1週間</option>
+      <option value="2592000">約1ヶ月</option>
+      <!--<option value="31536000">約1年</option>-->
+    </select> /1秒
+    <div id="starContainer" class="starContainer">
+      <div id="sun" class="sun" style="display: none;"></div>
+      <!--<div id="earth" class="earth" style="display: none;"></div>-->
+      <img id="earth" class="earth" style="display: none;" src="img/earth.png"></img>
+      <div id="moon" class="moon" style="display: none;"></div>
+    </div>
 
     <div class="container-fluid footer">
       <div class="row">
@@ -46,6 +62,8 @@
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.1.0/velocity.js"></script>
+
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <script src="http://code.highcharts.com/highcharts.js"></script>
