@@ -1,5 +1,8 @@
 /**
  * @TODO: 地球の自転がおかしい
+ *
+ * メモ
+ *   - setIntervalの実行間隔を短くすると、実際の描画が追いついていかなくなる。
  */
 (function(global){
   "use strict";
@@ -28,8 +31,8 @@
     })(this.centerObj);
     this.w = options.w || (360/365) * (Math.PI/180); // 角速度（公転）[ラジアン]
     this.selfW = options.selfW || (360/(24 * 60 * 60)); // 角速度（自転）[度]
-    this.interval = 100; // [ms]
-    this.selfRotateInterval = 100; // [ms]
+    this.interval = 400; // [ms]
+    this.selfRotateInterval = 400; // [ms]
     this.rotatable = ('rotatable' in options) ? options.rotatable : true;
     this.selfRotatable = ('selfRotatable' in options) ? options.selfRotatable : false;
     this.init();
