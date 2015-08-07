@@ -71,7 +71,7 @@
           if (Math.floor(R) > intR) {
             intR = Math.floor(R);
             that.elm.velocity({
-              rotateZ : intR + 'deg'
+              rotateZ : ((-1) * intR) + 'deg'
               //rotateZ : '+=2deg'
             });
           }
