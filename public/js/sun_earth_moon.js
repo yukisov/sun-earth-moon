@@ -131,7 +131,7 @@
       earth  = new global.app.Star('earth', {
         centerObj: sun,
         w: (360/(365 * 24 * 60 * 60)) * (Math.PI/180),
-        selfW: 360/(24 * 60 * 60),
+        selfW: 360/(24 * 60 * 60), // [度/sec]
         selfRotatable: true
       });
       moon  = new global.app.Star('moon', {
